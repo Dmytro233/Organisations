@@ -1,0 +1,77 @@
+#searchField {
+    text-align: center;
+    border: solid 5px gray;
+    margin-bottom: 10px
+}
+
+.listOfOrganisation {
+    border: solid 5px yellow;
+    padding: 20px
+}
+
+.listOfOrganisation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listOfOrganisation a {
+    text-decoration: none
+}
+
+.organisationPage {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.organisationSection {
+    text-align: center;
+    border: solid 5px gray
+}
+
+.membersSection li {
+    text-align: center;
+    list-style: none;
+    border: solid 5px yellow;
+    margin-bottom: 10px;
+}
+
+.membersSection a {
+    text-decoration: none
+}
+
+.userPicture {
+    text-align: center;
+    border: solid 5px gray
+}
+
+.userFollower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center
+}
+
+.userFollower li {
+    list-style: none
+}
+
+.userFollowers {
+    border: solid 5px yellow
+}
+
+.userFollowing {
+    border: solid 5px yellow
+}
+
+.follower {
+    text-align: center;
+    border: solid 5px blueviolet;
+}
+
+.follower li {
+    list-style: none
+}
+
+.follower a {
+    text-decoration: none
+}

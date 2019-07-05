@@ -3,12 +3,27 @@ import { actionTypes } from "./actionTypes";
 const initialState = {
   orgList: [],
   activeOrg: {},
-  activeUser: {}
+  activeUser: {},
+  activeFollowers: [],
+  activeFollowing: []
 };
 
 export const reducer = (state = initialState, action) => {
-  const { SET_ORG, SET_USER, SET_LIST } = actionTypes;
-  const { orgList, activeOrg, activeUser, type } = action;
+  const {
+    SET_ORG,
+    SET_USER,
+    SET_LIST,
+    SET_FOLLOWERS,
+    SET_FOLLOWING
+  } = actionTypes;
+  const {
+    orgList,
+    activeOrg,
+    activeUser,
+    activeFollowers,
+    activeFollowing,
+    type
+  } = action;
 
   switch (type) {
     case SET_LIST:
@@ -17,6 +32,10 @@ export const reducer = (state = initialState, action) => {
       return { ...state, activeOrg };
     case SET_USER:
       return { ...state, activeUser };
+    case SET_FOLLOWERS:
+      return { ...state, activeFollowers };
+    case SET_FOLLOWING:
+      return { ...state, activeFollowing };
     default:
       return state;
   }
